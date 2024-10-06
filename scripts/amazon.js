@@ -1,4 +1,7 @@
-//combining the html 11:57
+//combining the html 
+import {cart } from '../data/cart.js';
+import {products} from '../data/products.js';
+
 let productsHTML='';
 
 products.forEach((product) => {
