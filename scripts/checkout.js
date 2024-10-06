@@ -3,7 +3,7 @@ import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
 
-let cartSummaryHTML;
+let cartSummaryHTML='';
 cart.forEach((cartItem)=>{
 
 //take the product id from the cart array
@@ -41,7 +41,7 @@ cartSummaryHTML  += `
               ${machingProduct.name}
             </div>
             <div class="product-price">
-              $${ formatCurrency(machingProduct.priceCents)}
+              $${formatCurrency(machingProduct.priceCents)}
             </div>
             <div class="product-quantity">
               <span>
