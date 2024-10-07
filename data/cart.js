@@ -70,3 +70,19 @@
     saveToStorage();
 
   }
+
+  //update delivery id in the cart and put into the page
+  export function updateDeliveryOption(productId,deliveryOptionId){
+      let machingItem;
+      cart.forEach((cartItem)=>{
+      
+      if(productId===cartItem.productId){
+        machingItem=cartItem;
+      }
+    
+      });
+      
+      machingItem.deliveryOptionId=deliveryOptionId;
+      saveToStorage();
+
+  }
